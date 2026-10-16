@@ -40,7 +40,7 @@ A retailer that buys from hundreds of vendors needs to know which vendor relatio
 
 ## Dataset
 
-Raw data was loaded into a SQLite database (`(https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/vendor_sales_summary.csv)`):
+Raw data was loaded into a SQLite database
 
 | Table | Records | Contents |
 |---|---|---|
@@ -120,8 +120,8 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 ### Bulk purchasing and unit price
 ![Bulk purchase](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/10_bulk_purchasing_vs_unit_price.png)
 
-### Profit margin: top vs low performers
-![Confidence intervals](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/04_categorical_count_plots.png)
+### Profit margin: Top Vendors By Purchase Contribution
+![Donut Chart](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/09_vendor_purchase_contribution_donut.png)
 
 ### Correlation heatmap
 ![Correlation heatmap](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/05_correlation_heatmap.png)
@@ -133,7 +133,6 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 ![Outlier box plots](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/03_outlier_detection_boxplots.png)
 ![Distributions after filtering](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/02_numerical_distributions_updated.png)
 ![Count plots](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/04_categorical_count_plots.png)
-![Purchase share donut](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/09_vendor_purchase_contribution_donut.png)
 
 </details>
 
