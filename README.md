@@ -52,7 +52,7 @@ Raw data was loaded into a SQLite database
 | `end_inventory` | 224,489 | Closing stock by store and brand |
 | `vendor_sales_summary` | 10,692 | **Created in this project**: one row per vendor and brand |
 
-> The database and raw files are not included in this repository because of their size. **Dataset source:** _add the link here_.
+> The database and raw dataset files are not included in this repository because of their large size.
 
 ## Tech Stack
 
