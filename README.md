@@ -120,7 +120,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 ### Bulk purchasing and unit price
 ![Bulk purchase](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/10_bulk_purchasing_vs_unit_price.png)
 
-### Profit margin: Top Vendors By Purchase Contribution
+### Top Vendors By Purchase Contribution
 ![Donut Chart](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/09_vendor_purchase_contribution_donut.png)
 
 ### Correlation heatmap
