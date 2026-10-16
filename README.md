@@ -1,36 +1,35 @@
-# 📦 Vendor Performance and Inventory Optimization
+# Vendor Performance and Inventory Optimization
 
 An end-to-end data analysis project that turns millions of raw purchase, sales, invoice and inventory records into one decision-ready view of **vendor performance, procurement risk and locked inventory capital**, built with **SQL, Python (Pandas, Seaborn, SciPy) and Power BI**.
 
-📄 **Full project report (PDF):** [report/Vendor_Performance_Project_Report.pdf](report/Vendor_Performance_Project_Report.pdf)
+**Full project report (PDF):** [report/Vendor_Performance_Project_Report.pdf](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/Vendor_Performance_Project_Report.pdf)
 
-![Dashboard preview](images/dashboard_preview.png)
-
----
-
-## 📌 Table of Contents
-- [Business Problem](#-business-problem)
-- [Business Questions](#-business-questions)
-- [Dataset](#-dataset)
-- [Tech Stack](#-tech-stack)
-- [Project Workflow](#-project-workflow)
-- [Key Metrics](#-key-metrics)
-- [Key Findings](#-key-findings)
-- [Visualizations](#-visualizations)
-- [Recommendations](#-recommendations)
-- [Repository Structure](#-repository-structure)
-- [How to Run](#-how-to-run)
-- [Limitations](#-limitations)
-- [Future Work](#-future-work)
-- [Author](#-author)
+![Dashboard preview](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/Dashboard%20Preview.png)
 
 ---
 
-## 🎯 Business Problem
+## Table of Contents
+- [Business Problem]
+- [Business Questions]
+- [Dataset]
+- [Tech Stack]
+- [Project Workflow]
+- [Key Metrics]
+- [Key Findings]
+- [Visualizations]
+- [Recommendations]
+- [Repository Structure]
+- [How to Run]
+- [Limitations]
+- [Future Work]
+- [Author]
+---
+
+## Business Problem
 
 A retailer that buys from hundreds of vendors needs to know which vendor relationships are profitable, which create risk, and where cash is tied up in unsold stock. Purchases, invoices, prices and sales sit in separate tables, so there was no single view of vendor performance. This project builds that view and uses it to guide purchasing, pricing and inventory decisions.
 
-## ❓ Business Questions
+## Business Questions
 
 1. Which brands need **promotional or pricing adjustments** (low sales but high margin)?
 2. Which **vendors and brands** deliver the highest sales?
@@ -39,9 +38,9 @@ A retailer that buys from hundreds of vendors needs to know which vendor relatio
 5. Which vendors have **low inventory turnover**, and how much capital is locked in unsold stock?
 6. Do top and low performers differ **significantly in profit margin**?
 
-## 🗃 Dataset
+## Dataset
 
-Raw data was loaded into a SQLite database (`inventory.db`):
+Raw data was loaded into a SQLite database (`(https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/vendor_sales_summary.csv)`):
 
 | Table | Records | Contents |
 |---|---|---|
@@ -55,7 +54,7 @@ Raw data was loaded into a SQLite database (`inventory.db`):
 
 > The database and raw files are not included in this repository because of their size. **Dataset source:** _add the link here_.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Area | Tools |
 |---|---|
@@ -64,7 +63,7 @@ Raw data was loaded into a SQLite database (`inventory.db`):
 | Visualization | Matplotlib, Seaborn, Power BI |
 | Workflow | Jupyter Notebook, Python logging, Git and GitHub |
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ```
 Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics ─► EDA & statistics ─► Power BI dashboard ─► Recommendations
@@ -77,7 +76,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 5. **Analyse** the six business questions, including confidence intervals and a hypothesis test.
 6. **Visualize** in a Power BI dashboard.
 
-## 📐 Key Metrics
+## Key Metrics
 
 | Metric | Definition |
 |---|---|
@@ -88,7 +87,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 | Purchase Contribution (%) | Vendor purchase dollars / total purchase dollars x 100 |
 | Unsold Inventory Value | (Purchase Quantity - Sales Quantity) x Purchase Price |
 
-## 🔍 Key Findings
+## Key Findings
 
 | KPI | Value |
 |---|---|
@@ -107,39 +106,38 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 - **Pricing and promotion candidates.** Brands below **$560** in sales (15th percentile) but above **64.97%** margin (85th percentile).
 - **Data quality.** Gross profit goes as low as -$52,002.78, so some items sell below cost, and freight cost ranges from $0.09 to $257,032.07.
 
-## 📊 Visualizations
+## Visualizations
 
 ### Top vendors and brands by sales
-![Top vendors and brands](<img width="985" height="652" alt="image" src="https://github.com/user-attachments/assets/3851feb8-6521-4afc-9c03-ef55cbabdfd2" />
-)
+![Top vendors and brands](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/07_top_vendors_and_brands_by_sales.png)
 
 ### Vendor purchase contribution (Pareto)
-![Pareto](images/pareto_vendor_purchase_contribution.png)
+![Pareto](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/08_vendor_purchase_contribution.png)
 
 ### Brands for promotional or pricing adjustment
-![Low sales high margin](images/brands_low_sales_high_margin.png)
+![Low sales high margin](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/06_brand_sales_vs_profit_margin.png)
 
 ### Bulk purchasing and unit price
-![Bulk purchase](images/bulk_purchase_unit_price.png)
+![Bulk purchase](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/10_bulk_purchasing_vs_unit_price.png)
 
 ### Profit margin: top vs low performers
-![Confidence intervals](images/profit_margin_confidence_intervals.png)
+![Confidence intervals](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/04_categorical_count_plots.png)
 
 ### Correlation heatmap
-![Correlation heatmap](images/correlation_heatmap.png)
+![Correlation heatmap](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/05_correlation_heatmap.png)
 
 <details>
 <summary>More charts (EDA)</summary>
 
-![Distributions before filtering](images/eda_distributions_raw.png)
-![Outlier box plots](images/eda_boxplots_outliers.png)
-![Distributions after filtering](images/eda_distributions_clean.png)
-![Count plots](images/eda_countplots_top_categories.png)
-![Purchase share donut](images/vendor_purchase_share_donut.png)
+![Distributions before filtering](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/01_numerical_distributions.png)
+![Outlier box plots](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/03_outlier_detection_boxplots.png)
+![Distributions after filtering](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/02_numerical_distributions_updated.png)
+![Count plots](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/04_categorical_count_plots.png)
+![Purchase share donut](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/09_vendor_purchase_contribution_donut.png)
 
 </details>
 
-## 💡 Recommendations
+## Recommendations
 
 1. **Reduce vendor dependence:** qualify alternative suppliers for top categories and negotiate volume terms with the largest vendors.
 2. **Right-size inventory:** cut reorder quantities for vendors with turnover below 1 and run promotions on their excess stock.
@@ -148,7 +146,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 5. **Review loss-making items** and consider selective price increases or bundles for high-volume vendors with thinner margins.
 6. **Investigate freight cost outliers** by vendor and shipment size.
 
-## 🗂 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -166,7 +164,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
     └── Vendor_Performance_Project_Report.pdf
 ```
 
-## ▶️ How to Run
+## How to Run
 
 1. **Clone the repository**
    ```bash
@@ -182,7 +180,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 5. **Run `02_Vendor_Performance_Analysis.ipynb`** for the cleaning, charts and statistics.
 6. **Open the `.pbix` file** in Power BI Desktop to explore the dashboard.
 
-## ⚠️ Limitations
+## Limitations
 
 - Single-period snapshot, so seasonality and trends are not captured.
 - Several analyses use only items with positive profit and sales, so averages describe profitable, selling products.
@@ -191,7 +189,7 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 - Unsold capital is a net figure; vendors that sold down opening stock offset others' positive balances.
 - Results show patterns, not proven causes.
 
-## 🚀 Future Work
+## Future Work
 
 - Add time-series analysis and demand forecasting for reorder decisions.
 - Predict slow-moving items before they accumulate.
@@ -201,6 +199,4 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 ## 👤 Author
 
 **Mohammed Ayan**
-B.Tech in Artificial Intelligence and Machine Learning
-
 [LinkedIn](https://www.linkedin.com/in/mohammedayan-in/) · [GitHub](https://github.com/MohammedAyan-Git)
