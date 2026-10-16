@@ -110,7 +110,8 @@ Raw tables ─► SQLite ─► SQL CTE summary ─► Pandas cleaning & metrics
 ## 📊 Visualizations
 
 ### Top vendors and brands by sales
-![Top vendors and brands](images/top_vendors_and_brands_by_sales.png)
+![Top vendors and brands](<img width="985" height="652" alt="image" src="https://github.com/user-attachments/assets/3851feb8-6521-4afc-9c03-ef55cbabdfd2" />
+)
 
 ### Vendor purchase contribution (Pareto)
 ![Pareto](images/pareto_vendor_purchase_contribution.png)
