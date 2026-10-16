@@ -2,7 +2,7 @@
 
 An end-to-end data analysis project that turns millions of raw purchase, sales, invoice and inventory records into one decision-ready view of **vendor performance, procurement risk and locked inventory capital**, built with **SQL, Python (Pandas, Seaborn, SciPy) and Power BI**.
 
-**Full project report (PDF):** [report/Vendor_Performance_Project_Report.pdf](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/Vendor_Performance_Project_Report.pdf)
+**Full project report (PDF):** [Click here](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/Vendor_Performance_Project_Report.pdf)
 
 ![Dashboard preview](https://github.com/MohammedAyan-Git/Vendor-Performance-And-Inventory-Optimization/blob/main/Dashboard%20Preview.png)
 
